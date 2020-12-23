@@ -28,8 +28,22 @@ GitHub地址：https://github.com/kobeyk/Spring-Boot-Neo4j-Movies
 
 python版本https://github.com/lhd777/moive-question-robot-based-on-spark-neo4j
 
+[7]三元组处理与知识存储：https://blog.csdn.net/nieson2012/article/details/102785086
 
+[8]neo4j 安装与配置 https://www.cnblogs.com/jpfss/p/10874303.html
 
-三元组处理与知识存储：https://blog.csdn.net/nieson2012/article/details/102785086
+[9]关于知识图谱应用理论工具的一些整合 https://github.com/husthuke/awesome-knowledge-graph
 
-neo4j 安装与配置 https://www.cnblogs.com/jpfss/p/10874303.html
+[10] deepdive：一个信息抽取工具https://zhuanlan.zhihu.com/p/43143014
+
+[11] 一个可以从文本数据（非结构化数据）中抽取三元组的知识库项目https://github.com/tomgrek/zincbase
+
+[12]基于知识图谱的问答系统 https://github.com/WenRichard/KBQA-BERT
+
+[13]基于依存句法分析，实现面向开放域文本的知识三元组抽取（实体和关系抽取）及知识库构建(可以做一下然后和用bert的效果比较一下) https://github.com/lemonhu/open-entity-relation-extraction
+
+[14]现成的文本处理工具，可以直接进行知识的抽取 https://github.com/ownthink/Jiagu
+
+[15] 一个《海贼王》的知识图谱，和我们的项目过程类似，非常有参考价值 https://github.com/mrbulb/ONEPIECE-KG
+
+[16] 非结构化数据三元组抽取项目 https://github.com/dstlry/dstlr
