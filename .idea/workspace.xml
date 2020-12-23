@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af64f47a-9449-486a-a27e-3d103fb3bc7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Crawler/prepocess.py" afterDir="false" />
-    </list>
+    <list default="true" id="af64f47a-9449-486a-a27e-3d103fb3bc7c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608707131067</updated>
       <workItem from="1608707132212" duration="1745000" />
-      <workItem from="1608709266855" duration="3022000" />
+      <workItem from="1608709266855" duration="3587000" />
     </task>
     <servers />
   </component>
