@@ -1,5 +1,23 @@
 # www
 
+**文件功能：**
+
+**Crawler**:爬虫，爬取数据
+
+**Graph/graph.db:**知识图谱
+
+**Images**:图片
+
+**Storage:**数据处理及知识图谱搭建
+
+
+
+
+
+
+
+**参考资料**
+
 [1] 完整课程资料：https://github.com/npubird/KnowledgeGraphCourse
 
 [2] 医疗知识图谱的搭建：https://github.com/liuhuanyong/QASystemOnMedicalKG
