@@ -1,0 +1,12 @@
+
+With the advancing of domain ontology construction, various methodologies have been developed. These methodologies are of great significance in the current research on constructing ontology. Therefore, this section will firstly review the brief history and describe each methodology. A criterion established by Fernández López ( López, 2002) provides this thesis with the guideline for analyzing each methodology. Based on the discussion of existing methodologies, this research tries to summarize the general methodology and process for constructing military domain ontology.       
+Building ontology can guarantee the system relationship between data layer entities with clear data mode, mainly to build concepts, attributes, relationships and rules. "Concept" defines the scope of entities that may appear at present and their common information; "attribute" includes the relationship attribute from concept to concept and the numerical attribute from concept to value; "relationship" refers to the mutual hierarchical relationship between concepts; and "rule" specifically describes the constraints and inherent association of concepts and attributes. According to different application fields and requirements, the methods of ontology construction are also different. In this paper, the accuracy of ontology is required to be high, so the original ontology is constructed manually. Based on the military information dictionary, the concepts and attributes of each entity are classified, and the relationship between them is analyzed.
+In the later stage of knowledge mapping construction, this paper uses automatic ontology construction technology to automatically build (update and iterate) ontology through data driven, and then it is modified and confirmed by combining quality evaluation method and manual audit.
+On the basis of the above reviews of methodologies and theoretical framework from cognitive science, the current research abstracts the processes of constructing an ontology military domain:
+1)	Determine the domain and scope of the ontology. As the model of reality, an ontology can only describe one certain domain of reality. The starting work is to determine its domain and scope.
+2)	Enumerate domain terms. Usually, the form of ontology is the vocabulary that representing the classes, attribution and relationships.
+3)	Define the classes and the class hierarchy. 
+4)	Define properties.
+5)	Define the facets of the slots.
+6)	Create instance.
+ 
