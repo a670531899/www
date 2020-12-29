@@ -4,11 +4,11 @@
 
 **Crawler**:爬虫，爬取数据
 
-**Graph/graph.db:**知识图谱
+**Graph/graph.db**:知识图谱
 
 **Images**:图片
 
-**Storage:**数据处理及知识图谱搭建
+**Storage**:数据处理及知识图谱搭建
 
 **Ontology**:实体构建部分
 
