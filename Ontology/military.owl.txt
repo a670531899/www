@@ -1,0 +1,233 @@
+ @prefix : <http://www.kg_military_ontology.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.kg_military_ontology.com> .
+
+<http://www.kg_military_ontology.com> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.kg_military_ontology.com#hasActedIn
+:hasEquipmentIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf :hasEquipment ;
+            rdfs:domain : MilitaryEquipment;
+            rdfs:range :Military.
+
+
+###  http://www.kg_military_ontology.com#hasActor
+:hasMarterials rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :MilitaryMarterials;
+          rdfs:range :Military.
+
+
+###  http://www.kg_military_ontology.com#hasGenre
+:hasInstitution rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Institution;
+          rdfs:range :Military.
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.kg_military_ontology.com#actor_achiem
+:tank_name rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :MilitaryEquipment ;
+              rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#tank_weight
+:tank_weight rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :MilitaryEquipment ;
+           rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#tank_length
+:tank_length rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :MilitaryEquipment ;
+                rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#tank_birthPlace
+:tank_birthPlace rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :MilitaryEquipment
+                  rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#tank_instruction
+:tank_instruction rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :MilitaryEquipment ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#tank_speed
+:tank_speed rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :MilitaryEquipment ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.kg_military_ontology.com#tank_damageValue
+:tank_damageValue rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :MilitaryEquipment ;
+                     rdfs:range xsd:integer .
+
+
+###  http://www.kg_military_ontology.com#tank_foreName
+:tank_foreName rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :MilitaryEquipment;
+                rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#tank_precision
+:tank_precision rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :MilitaryEquipment
+                   rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#tank_view
+:tank_view rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :MilitaryEquipment
+                rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#institution_name
+:institution_name rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Institution ;
+            rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_name
+:army_name rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :MilitaryInstitutions
+              rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_type
+:army_type rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :MilitaryInstitutions
+           rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_scale
+:army_scale rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :MilitaryInstitutions
+              rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_commander
+:army_commander rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :MilitaryInstitutions
+                rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_scale
+:army_scale rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :MilitaryInstitutions
+                rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_battlefield
+:army_battlefield rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :MilitaryInstitutions
+             rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_location
+:army_location rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :MilitaryInstitutions
+                rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_establishDay
+:army_establishDay rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :MilitaryInstitutions
+              rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_form
+:army_form rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :MilitaryInstitutions
+                   rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_expenses
+:army_expenses rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :MilitaryInstitutions
+                rdfs:range xsd:string .
+
+
+###  http://www.kg_military_ontology.com#army_configre
+:army_configre rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :MilitaryInstitutions
+                   rdfs:range xsd:string .
+
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.kg_military_ontology.com#Institutions
+:Institutions rdf:type owl:Class ;
+       owl:disjointWith :Institutions ,
+                        :Military .
+
+###  http://www.kg_military_ontology.com#Personnel
+:Personnel rdf:type owl:Class ;
+       owl:disjointWith :Military .
+
+###  http://www.kg_military_ontology.com#Equipment
+:Equipment rdf:type owl:Class ;
+       owl:disjointWith :Military .
+
+###  http://www.kg_military_ontology.com#Marterials
+:Marterials rdf:type owl:Class ;
+       owl:disjointWith :Military .
+
+###  http://www.kg_military_ontology.com#Facilities
+:Facilities rdf:type owl:Class ;
+       owl:disjointWith :Military .
+
+###  http://www.kg_military_ontology.com#Theory
+:Theory rdf:type owl:Class ;
+       owl:disjointWith :Military .
+
+###  http://www.kg_military_ontology.com#Environment
+:Environment rdf:type owl:Class ;
+       owl:disjointWith :Military .
+
+###  http://www.kg_military_ontology.com#Military
+:Military rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/a670531899/www
