@@ -1,0 +1,180 @@
+html {
+  background: #fafafa;
+  height: 100%;
+  font-family: Helvetica;
+}
+
+#wrapper {
+  position: inherit;
+  margin-top:10%;
+  margin-left:40%;
+}
+#wrapper span {
+  font-size: 6em;
+}
+#wrapper span:nth-child(1) {
+
+  font-weight: 700;
+  position: relative;
+  color: #346DF1;
+  animation-name: toGreen, bounce;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+  animation-duration: 2s, 0.4s;
+}
+#wrapper span:nth-child(2) {
+  font-weight: 700;
+  position:relative;
+  color: #E22C29;
+  animation-name: toYellow, bounce;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+  animation-duration: 2s, 0.4s;
+  animation-delay: 0.25s;
+}
+#wrapper span:nth-child(3) {
+  font-weight: 700;
+  position: relative;
+  color: #F8AF0C;
+  animation-name: toRed, bounce;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+  animation-duration: 2s, 0.4s;
+  animation-delay: 0.50s;
+}
+#wrapper span:nth-child(4) {
+  font-weight: 700;
+  position: relative;
+  color: #346DF1;
+  animation-name: toGreen, bounce;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+  animation-duration: 2s, 0.4s;
+  animation-delay: 0.75s;
+}
+#wrapper span:nth-child(5) {
+  font-weight: 700;
+  position: relative;
+  color: #2D9B42;
+  animation-name: toBlue, bounce;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+  animation-duration: 2s, 0.4s;
+  animation-delay: 1s;
+}
+#wrapper span:nth-child(6) {
+  font-weight: 700;
+  position: relative;
+  color: #E22C29;
+  animation-name: toYellow, bounce;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+  animation-duration: 2s, 0.4s;
+  animation-delay: 1.25s;
+}
+#wrapper input {
+  -webkit-appearance: none;
+  width: 60%;
+  transform: translate(-50%, 0);
+  position: relative;
+  left: 18%;
+  height: 32px;
+  padding: 30px 15px 30px 15px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+
+  /*transition: transform 0.25s ease-in-out;*/
+  margin-top: 20px;
+  margin-bottom:60px;
+}
+/*
+#wrapper input:focus {
+  transform:translate(-50%, 0)scale(1.1);
+  -ms-transform: translate(-50%, 0) scale(1.1); /*IE9*/
+  /*-moz-transform: translate(-50%, 0) scale(1.1);/*Firefox*/
+  /*-webkit-transform:translate(-50%, 0);         /*safari和Chrome*/
+  /*-o-transform:translate(-50%, 0) scale(1.1);   /*Opera*/
+  /*outline: none !important;
+}*/
+
+
+@keyframes toBlue {
+  100% {
+    color: #346DF1;
+  }
+}
+@keyframes toRed {
+  100% {
+    color: #E22C29;
+  }
+}
+@keyframes toYellow {
+  100% {
+    color: #F8AF0C;
+  }
+}
+@keyframes toGreen {
+  100% {
+    color: #2D9B42;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -20px;
+  }
+}
+.icon-search{
+width: 20px;height: 20px;
+border-radius: 100%;
+border:2px solid currentcolor;
+position: relative;
+margin:0 auto;
+}
+.icon-search:after{
+content: "";
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+transform: rotate(45deg);
+width:8px;
+height: 2px;
+position: absolute;
+top:18px;
+left:13px;
+background-color: currentcolor;
+}
+.btn-more{
+    display:block;margin:0 auto;  /*使按钮居中*/
+    margin-left:12%;
+    margin-top:5px;
+    width:120px;
+    height:50px;
+    font-size:18px;
+    background-color: #1B9AF7;
+    border-color: #1B9AF7;
+    color: #FFF;
+    border-radius: 4px;
+}
+.btn-more:visited{
+    color: #FFF;
+}
+.btn-more:hover, .btn-more:focus {
+    background-color: #4cb0f9;
+    border-color: #4cb0f9;
+    color: #FFF;
+}
+.btn-more:active, .btn-more.active, .btn-more.is-active{
+    background-color: #2798eb;
+    border-color: #2798eb;
+    color: #0880d7;
+}
+.logo {
+min-width: 80px;
+height: 27px;
+border: 0px;
+margin: 20px 20px 0px 20px;
+float: left;
+}

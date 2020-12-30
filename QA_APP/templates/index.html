@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counsel</title>
+    <link rel="stylesheet" href="/static/css/bot.css">
+    <link rel="shortcut icon" href="/static/img/bot.png">
+</head>
+
+<body >
+
+  <div class="chat_box" style="position:relative">
+    <div class="header" >
+        <p class="capitalize text-grey-dark  font-normal py-2">How can we help you?</p>
+        <p  class="font-light text-grey-dark  leading-tight max-w-xs m-auto">
+            Please keep your questions concise so we can give you the best advice!
+        </p>
+
+    </div>
+    <div class="chat_content"  id="frame">
+        {% for content in pair %}
+         <div class="receiver">
+          <div>
+              <img src="/static/img/men.png">
+          </div>
+          <div class="right">
+              <div class="right_triangle"></div>
+
+              <span style="color:white">{{ content.question }} </span>
+           </div>
+          </div>
+        <!-- Right -->
+          <div class="sender" >
+              <div>
+                  <img src="/static/img/robot.jpg">
+              </div>
+              <div class="right">
+                 <div class="left_triangle"></div>
+                 <span >{{ content.answer }} </span>
+
+              </div>
+          </div>
+          {% endfor %}
+    </div>
+   {% csrf_token %}
+     <form action="response" method="post">
+         <div id="sent_div">
+            <input class="sent_input" name="question" id="input" placeholder="hello" autocomplete="off" autofocus/>
+            <button type="submit" class="sent_btn" onmouseover="this.style.backgroundColor='#5CACEE';this.style.color='white';" onmouseout="this.style.backgroundColor='white';this.style.color='#3D3D3D';">发送</button>
+         </div>
+     </form>
+</div>
+
+
+
+<script>
+    var row = document.getElementsByClassName("right");
+    for(var j=0; j<row.length ;j++){
+        if(row[j].innerText== ""){
+            row[j].parentNode.style.display="none";
+        }
+    }
+    function scrollToEnd(id){
+        var el = document.getElementById(id);
+        el.scrollTop=el.scrollHeight;
+    }
+    scrollToEnd('frame')//warp 为id
+</script>
+{#<script src="/static/js/bot.js"></script>#}
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+header {
+    height: 5em;
+    border-bottom: 5px solid #16646f;
+}
+
+/* Logo Styles*/
+header .logo {
+    loat: left;
+    background: url('http://synergiste.com/wp-content/uploads/2015/03/logo-menu-bar.png');
+    background-repeat: repeat;
+    background-size: auto auto;
+    background-size: 100%;
+    display: block;
+    height: 2.3em;
+    width: 10em;
+    background-repeat: no-repeat;
+    direction: rtl;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-top: 1.85em;
+}
+
+/*Nav Styles*/
+header #main-nav {
+    float: right;
+    margin-top: 1.55em;}
+
+
+header #main-nav  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Arimo', sans-serif;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-left: 3em;
+    color: #333;
+    font-weight: bold;
+  }
+
+header #main-nav  a:hover{
+    color:#16646f;
+}
+header #responsive-menu-button {
+    display: none;
+    font-size: 3em;
+    color: #333;
+    float: right;
+    margin-top: 0.5em;
+
+}
+
+footer {
+
+    border-bottom: 5px solid #16646f;
+    padding: 30px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em;
+    color: #555;
+
+}
+footer .copyright {
+    float: left;
+}
+
+footer #footer-nav {
+    float: right;
+}
+
+footer #footer-nav a:first-of-type {
+    padding-left: 0;
+}
+
+footer #footer-nav a {
+    color: #16646f;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 0 10px;
+    padding-left: 10px;
+    border-right: 1px solid #ddd;
+}
+footer #footer-nav a:hover{
+    color:#555;
+    border-bottom: 1px solid #ddd;
+}
