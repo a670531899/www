@@ -4,17 +4,19 @@
 
 **Crawler**:爬虫，爬取数据
 
-**Graph/graph.db**:知识图谱
+**Graph/graph.db:**知识图谱
 
 **Images**:图片
 
-**Storage**:数据处理及知识图谱搭建
+**Storage:**数据处理及知识图谱搭建
 
-**Ontology**:实体构建部分
+**doc/knowledge  integration.docx** : 知识融合论文部分
 
-**docs**:论文
+**doc/Knowledge Extraction.docx** :知识抽取（非结构化）部分论文
 
+**doc/MilitaryOntologyConstruction.docx** ：本体构建部分论文
 
+**doc/Semantic searching** ：语义搜索部分论文
 
 
 
